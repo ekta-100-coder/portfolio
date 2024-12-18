@@ -1,0 +1,187 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #fff;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(45deg, #4CAF50, #2D6A4F);
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    border-bottom: 5px solid #fff;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* About Section */
+.about {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.about:hover {
+    transform: translateY(-5px);
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Skills Section */
+.skills {
+    background: #fff;
+    padding: 50px 0;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.skill-set {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill {
+    background: #f4f4f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.skill h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.contact ul {
+    list-style: none;
+    text-align: center;
+}
+
+.contact ul li {
+    background: #4CAF50;
+    padding: 12px 25px;
+    margin: 10px 0;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.contact ul li:hover {
+    background: #2D6A4F;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #2D6A4F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skill-set {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    .skills h2, .about h2 {
+        font-size: 2rem;
+    }
+
+    .skill-set {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
